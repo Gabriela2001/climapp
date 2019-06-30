@@ -32,16 +32,56 @@
 					</div>
 
 				</div>
+				
 				<!-- div informacion-->
-				<div class="container-fluid divImg padding">
-					<ol>
-						<li><i class="fas fa-map-marker-alt ubicacion"></i>
-						París, France.</li>
-						<li><b>Sodales Vel Mauris</b></li>
-						<li>are used to trigger in-page functionality</li>
-						<li><i class="far fa-clock ubicacion"></i> Duration:<b> 10 Days</b></li>
-					</ol>
+				<div class="container-fluid divImg padding" ng-repeat="x in Listado">
+					<div class="row">
+						<div class="col">
+							<br>
+							<i class="fas fa-map-marker-alt ubicacion"></i>
+							{{x.data.city.name}}
+							<br>
+							<i class="fas fa-cloud-sun-rain ubicacion"></i>
+							<b>Clima: </b>{{x.data.list["0"].weather["0"].description}}
+							<br>
+							<i class="fas fa-cloud ubicacion"></i>
+							<b>Nubes: </b>{{x.data.list["0"].clouds.all}}
+							<br>
+							<i class="fas fa-wind ubicacion"></i>
+							<b>Velocidad del Viento: </b>{{x.data.list["0"].wind.speed}}
+							<br>
+							<i class="fas fa-temperature-low ubicacion"></i>
+							<b>Viento en Grados: </b>{{x.data.list["0"].wind.deg}}
+							<br>
+							<i class="fas fa-tint ubicacion"></i>
+							<b>Humedad: </b>{{x.data.list["0"].main.humidity}}
+							<br>
+							<i class="fas fa-temperature-high ubicacion"></i>
+							<b>Temperatura: </b>{{x.data.list["0"].main.temp}}
+							<br>
+							<i class="fas fa-temperature-high ubicacion"></i>
+							<b>Temperatura max: </b>{{x.data.list["0"].main.temp_max}}
+							<br>
+							<i class="fas fa-temperature-low ubicacion"></i>
+							<b>Temperatura min: </b>{{x.data.list["0"].main.temp_min}}
+							<br>
+							<i class="fas fa-map-marked-alt ubicacion"></i>
+							<b>Coordenadas: </b>
+							<br>
+							<b>Latitud: </b>{{x.data.city.coord.lat}}
+							<br>
+							<b>Longitud: </b>{{x.data.city.coord.lon}}
+							<br>
+							<i class="fas fa-users ubicacion"></i>
+							<b>Población: </b>{{x.data.city.population}}
+							<br>
+							<i class="far fa-clock ubicacion"></i><b>  {{x.data.list["0"].dt_txt}}</b>
+							<br><br>
+
+						</div>
+					</div>
 				</div>
+				
 			</div>
 		</div>
 
@@ -49,7 +89,7 @@
 		<div class="row padding">
 			<div class="colcard">
 			  <div class="item item-text-wrap">
-			    This is a basic Card which contains an item that has wrapping text.
+			    Introduce el nombre de la ciudad o departamento. Click en la lupa.
 			  </div>
 			</div>
 		</div>
