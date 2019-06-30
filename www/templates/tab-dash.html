@@ -1,13 +1,73 @@
 <ion-view view-title="Clima">
   <ion-content class="padding">
-	<h2>CLIMA</h2>
+
+  	<!--contenedor-->
+	<div class="container">
+		<!-- introducir el nombre del departamento-->
+		<br>
+		<div class=" row item item-input-inset">
+			<div class="col-80">
+				<label class="item-input">
+					<!-- ng model para variable temporal-->
+					<input type="text" placeholder="Departamento" ng-model="PaisIngresado">
+				</label>
+			</div>
+			<div class="col-20">
+				<!--ng-click para llamar a la funcion del controlador-->
+				<button class="button button-clear button-light" ng-click="ObtenerClima(PaisIngresado)"><i class="icon ion-search placeholder-icon"></i></button>
+			</div>
+		</div>
+		<br>
+
+		<!--row donde se muestran datos-->
+		<div class="row">
+			<div class="col">
+				<!--div imagen -->
+				<div class="container fondoImg">
+					<div class="col-60">
+						<img src="img/icono.png" class="icono">
+					</div>
+					<div class="col">
+						<h1 class="txtT padding">Weather<span><h4 class="txtT">Guatemala</h4></span></h1>
+					</div>
+
+				</div>
+				<!-- div informacion-->
+				<div class="container-fluid divImg padding">
+					<ol>
+						<li><i class="fas fa-map-marker-alt ubicacion"></i>
+						París, France.</li>
+						<li><b>Sodales Vel Mauris</b></li>
+						<li>are used to trigger in-page functionality</li>
+						<li><i class="far fa-clock ubicacion"></i> Duration:<b> 10 Days</b></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<div class="row padding">
+			<div class="colcard">
+			  <div class="item item-text-wrap">
+			    This is a basic Card which contains an item that has wrapping text.
+			  </div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	
+	<!--
+	
 
 	<div class="list">
 		<label class="item item-input">
 			<input type="text" placeholder="Pais" ng-model="PaisIngresado">
 		</label>
 		<button ng-click="ObtenerClima(PaisIngresado)">Aceptar</button>
-	</div>
+	</div>-->
 	
   </ion-content>
 </ion-view>

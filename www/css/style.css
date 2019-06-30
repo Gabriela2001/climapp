@@ -1,1 +1,54 @@
 /* Empty. Add your own CSS if you like */
+.fondoImg{
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/p1.jpg") no-repeat center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	width: 100%;
+	
+
+}
+.txtT{
+	color:white;
+}
+.precio{
+  width: 60px;
+  height: 35px;
+  background-color:#037FFB;
+  position: absolute;
+  right: 1.2em;
+  bottom: 9.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divImg{
+	-webkit-box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+
+}
+.ubicacion{
+  color:#037FFB;
+}
+.blanco{
+	background-color: white;
+}
+
+/*hacer transparente*/
+.transparente{
+  background-color:transparent;
+  border: 1px solid #929292;
+  width: 85%;
+
+}
+.padding{
+	padding-top:0;
+}
+li{
+	padding:1%;
+}
+.icono{
+	width: 50%;
+	height: 50%;
+}
