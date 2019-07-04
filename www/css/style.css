@@ -52,3 +52,7 @@ li{
 	width: 50%;
 	height: 50%;
 }
+ion-tabs{
+	position:relative;
+	bottom: 0 !important;
+}
